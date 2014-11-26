@@ -109,6 +109,8 @@ class os_hardening::suid_sgid (
   '/usr/lib/vte/gnome-pty-helper',
   '/usr/lib/libvte9/gnome-pty-helper',
   '/usr/lib/libvte-2.90-9/gnome-pty-helper',
+  # jenkins
+  '/usr/bin/schroot'
   ]
 
   $final_blacklist = combine_sugid_lists(
